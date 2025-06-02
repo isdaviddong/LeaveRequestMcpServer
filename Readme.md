@@ -47,6 +47,7 @@ GetLeaveRecordAmount("David") // 回傳 5
 LeaveRequest(DateTime.Now, "3", "出國玩", "代理人", "David") // 回傳請假結果
 GetCurrentDate() // 回傳目前日期
 ```
+video: https://www.youtube.com/embed/rv5w1Rh0yU0
 
 ## 目錄結構
 - `Program.cs`: 伺服器的主要程式碼。
