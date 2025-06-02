@@ -1,7 +1,7 @@
 # MinimalMcpServer
 
 ## 專案概述
-MinimalMcpServer 是一個基於 .NET 10.0 的最小化 Model Context Protocol (MCP) 伺服器範例。此伺服器使用 Microsoft.Extensions.Hosting 和 ModelContextProtocol 套件，提供 MCP 工具的實現。
+MinimalMcpServer 是一個基於 .NET  的最小化 Model Context Protocol (MCP) 伺服器範例。此伺服器使用 Microsoft.Extensions.Hosting 和 ModelContextProtocol 套件，提供 MCP 工具的實現。
 
 ## 功能
 - 提供 MCP 工具類型 `EchoTool` 和 `LeaveRequestTool`。
@@ -19,12 +19,12 @@ MinimalMcpServer 是一個基於 .NET 10.0 的最小化 Model Context Protocol (
 - **GetCurrentDate**: 取得目前日期。
 
 ## 系統需求
-- .NET 10.0
+- .NET 8+
 - Microsoft.Extensions.Hosting 9.0.5
 - ModelContextProtocol 0.2.0-preview.2
 
 ## 安裝與執行
-1. 確保已安裝 .NET 10.0 SDK。
+1. 確保已安裝 .NET 8+ SDK。
 2. 使用以下指令執行伺服器：
    ```bash
    dotnet run --project MinimalMcpServer.csproj
@@ -40,11 +40,6 @@ MinimalMcpServer 是一個基於 .NET 10.0 的最小化 Model Context Protocol (
 - 定義專案的目標框架和套件依賴。
 
 ## MCP 工具範例
-### EchoTool 範例
-```csharp
-Echo("Hello") // 回傳 "Echo: Hello"
-Reverse("Hello") // 回傳 "olleH"
-```
 
 ### LeaveRequestTool 範例
 ```csharp
@@ -54,7 +49,5 @@ GetCurrentDate() // 回傳目前日期
 ```
 
 ## 目錄結構
-- `bin/`: 編譯後的輸出檔案。
-- `obj/`: 編譯過程中的中間檔案。
 - `Program.cs`: 伺服器的主要程式碼。
 - `MinimalMcpServer.csproj`: 專案檔案。
